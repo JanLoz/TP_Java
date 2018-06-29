@@ -8,6 +8,4 @@ public class Mainshop {
         System.out.println(m.getNetPrice());
 
     }
-
-
 }
