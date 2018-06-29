@@ -10,7 +10,7 @@ public class Mainshop {
         System.out.println(m1.getPublisher());
         m1.getAuthorList().add(new Author(5, "Herman", "Melville"));
 
-        Media m2 = new Cd("10", "Orchestra", 15);
+        Media m2 = new Cd("10", "Orchestra", 15, 5);
         System.out.println(m2.toString());
         System.out.println(m2.getNetPrice());
     }

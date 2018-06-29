@@ -1,13 +1,15 @@
 package com.m2i.poe.shop;
 
+import java.util.ArrayList;
+
 public class Media {
 
     private String id;
     private String title;
     private double price;
     private double taxe = 0.2;
-
-
+    private Publisher publisher;
+    private ArrayList<Author> authorList= new ArrayList<>();
 
     public Media() { // constructeur vide appele dans mainshop
     }
@@ -16,6 +18,10 @@ public class Media {
         this.id=id;
         this.title=title;
         this.price=price;
+    }
+
+    public String toString() { //Sortie affiche , renvioe de chaine
+        return  id+" "+ title+" "+ price+ " ";
     }
 
 
@@ -53,5 +59,21 @@ public class Media {
 
     public double getNetPrice()  {
         return price*1.2;
+    }
+
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
+    }
+
+    public ArrayList<Author> getAuthorList() {
+        return authorList;
+    }
+
+    public void setAuthorList(ArrayList<Author> authorList) {
+        this.authorList=authorList;
     }
 }

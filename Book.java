@@ -20,8 +20,8 @@ public class Book extends Media { // heritage book is going to media
         System.out.println("Book is"+ this.title+ this.author+ this.genre+ this.nbPage+ this.pubyear);
     }
 
-    public String toString() {
-        return title + " " + author + " " + genre;
+    public String toString() {  // affichage des parametres
+        return super.toString();
     }
 
 
@@ -45,7 +45,7 @@ public class Book extends Media { // heritage book is going to media
         return nbPage;
     }
 
-    @Override  /// il utilice la methode de calcule en media pour calcule le prix de livre a 5% taxe
+    @Override  ///  utilice la methode de calcule en media pour calculeR le prix des livres a 5% taxe
     public double getNetPrice() {
         return getPrice() * 1.05 * 0.95+0.01;
     }
