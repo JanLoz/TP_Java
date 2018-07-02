@@ -48,6 +48,6 @@ public class Book extends Media { // heritage book is going to media
 
     @Override  ///  utilice la methode de calcule en media pour calculeR le prix des livres a 5% taxe
     public double getNetPrice() {
-        return getNetPrice * 1.05 * 0.95+0.01;
+        return getNetPrice * 1.05 * 0.95+0.01+getNetPrice;
     }
 }

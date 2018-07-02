@@ -22,6 +22,7 @@ public class Cd extends Media {
 
     @Override
     public double getNetPrice() {
+
         return getNetPrice*1.2;
     }
 
