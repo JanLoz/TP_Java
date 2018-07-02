@@ -5,6 +5,8 @@ public class Cd extends Media {
     private String title;
     private int track;
     private double price;
+    private double getNetPrice;
+
 
     public Cd () { //  constructeur vide
     }
@@ -16,6 +18,11 @@ public class Cd extends Media {
 
     public String toString () {
         return super.toString()+ track;
+    }
+
+    @Override
+    public double getNetPrice() {
+        return getNetPrice*1.2;
     }
 
 }

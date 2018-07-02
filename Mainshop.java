@@ -13,5 +13,12 @@ public class Mainshop {
         Media m2 = new Cd("10", "Orchestra", 15, 5);
         System.out.println(m2.toString());
         System.out.println(m2.getNetPrice());
+
+        Cart c1 = new Cart();
+        c1.add(m1);
+        c1.add(m2);
+        System.out.println(c1);
+
     }
+
 }

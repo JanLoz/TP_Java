@@ -2,7 +2,7 @@ package com.m2i.poe.shop;
 
 import java.util.ArrayList;
 
-public class Media {
+public abstract class Media {
 
     private String id;
     private String title;
@@ -56,10 +56,8 @@ public class Media {
     public void setTaxe(double taxe) {
         this.taxe = taxe;
     }
+    public abstract double getNetPrice();
 
-    public double getNetPrice()  {
-        return price*1.2;
-    }
 
     public Publisher getPublisher() {
         return publisher;
