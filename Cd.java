@@ -23,7 +23,7 @@ public class Cd extends Media {
     @Override
     public double getNetPrice() {
 
-        return getNetPrice*1.2;
+        return getPrice()*1.2;
     }
 
 }
