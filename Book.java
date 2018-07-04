@@ -9,6 +9,7 @@ public class Book extends Media { // heritage book is going to media
     private String nbPage;
     private double getNetPrice;
 
+    public Book (){}
     public Book ( String id, String title,  double price, String pubyear,  String genre){
         super(id, title, price);  // super prends l information de media
         this.pubyear = author;
@@ -48,6 +49,6 @@ public class Book extends Media { // heritage book is going to media
 
     @Override  ///  utilice la methode de calcule en media pour calculeR le prix des livres a 5% taxe
     public double getNetPrice() {
-        return getNetPrice * 1.05 * 0.95+0.01+getNetPrice;
+        return getPrice() * 1.05 * 0.95+0.01;
     }
 }
